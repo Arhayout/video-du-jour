@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html><head><meta charset="utf-8">
-<meta http-equiv="refresh" content="0; url=https://www.youtube.com/watch?v=IDvV7Tvt8gM">
 <title>Ecoute du soir</title>
-<script>location.replace("https://www.youtube.com/watch?v=IDvV7Tvt8gM");</script>
-</head><body><a href="https://www.youtube.com/watch?v=IDvV7Tvt8gM">Ouvrir l'ecoute du soir</a></body></html>
+<script>
+var VIDEOS = {
+  mulk: ["IDvV7Tvt8gM", "kyj43FYjwrU", "jic0DRuoWjA", "OMJJ40AX4t4"],
+  chaarawi: ["BcJDQi48Rxk", "mBO69b_APNU", "RAhg-HQ2D2Y", "pTJpXcfL9mw", "jM-TOh5IZ2c", "ha10nQ7rWEo"],
+  nabulsi: ["kuSYCHTMzEI", "dncB1gnPDZM", "NJfNxsFvvNk", "jogCJgy-xMI", "M1rQfB75Fps", "BJc6wDdI1Dw"]
+};
+var cats = Object.keys(VIDEOS);
+var list = VIDEOS[cats[Math.floor(Math.random() * cats.length)]];
+var id = list[Math.floor(Math.random() * list.length)];
+location.replace("https://www.youtube.com/watch?v=" + id);
+</script>
+</head><body><noscript><a href="https://www.youtube.com/watch?v=IDvV7Tvt8gM">Ouvrir l'ecoute du soir (Sourate Al-Mulk)</a></noscript></body></html>
